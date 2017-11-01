@@ -1,0 +1,87 @@
+//
+//  PrefixHeader.pch
+//  Borrowing
+//
+//  Created by Sierra on 2017/8/22.
+//  Copyright © 2017年 wenzhengban. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//导入自定义宏的头文件
+#import "Constants.h"
+#import <AdSupport/AdSupport.h>
+//三方库
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+/* 改变系统的target+selector模式为 block模式。 带来紧凑的代码风格，高效率的回调执行 */
+#import "BlocksKit.h"
+#import "BlocksKit+MessageUI.h"
+#import "BlocksKit+UIKit.h"
+
+
+#import "MJRefresh.h"
+#import "MJExtension.h"
+//#import <MBProgressHUD.h>
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+
+#import "AppDelegate+Category.h"
+
+#import "XMToolClass.h"
+#import "NSString+Hash.h"
+#import "SVProgressHUD.h"
+
+
+#import "SDCycleScrollView.h"
+
+#import "UIButton+NDButtonPosition.h"
+
+//分类————LWH——————
+#import <AVFoundation/AVFoundation.h>
+
+
+#import "UIView+Extension.h"
+
+#import "UILabel+Custom.h"
+
+#import "UIImage+Custom.h"
+
+#import "UIImageView+YYZCustom.h"
+
+#import "UIButton+NZCustom.h"
+
+#import "UIBarButtonItem+Extension.h"
+
+#import "NSString+NZTextSize.h"
+
+#import "NSDictionary+CustomDict.h"
+
+#import "UINavigationBar+Awesome.h"//修改导航栏的样式
+
+#import "CustomButton.h"//图标在右边的button
+
+#import "ActionSheetTableView.h"
+
+#import "CommonMethod.h"
+
+#import "PopAnimator.h"//转场动画
+
+#import "GetPicture.h"
+
+#import "HHRefreshHeader.h"
+#import "HHRefreshFooter.h"
+
+
+#import "DBAccount.h"
+#import "DBSave.h"
+
+#import "JDBrowsingHistoryDataStorage.h"
+
+//#import "DBLoginViewController.h"
+
+#endif /* PrefixHeader_pch */

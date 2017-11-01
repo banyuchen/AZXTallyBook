@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DDPCAView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POc-Jn-GpQ">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGg-PI-626">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="13" maxY="0.0"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.27450980390000002" green="0.62745098040000002" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectFinish:" destination="iN0-l3-epB" eventType="touchUpInside" id="EqF-x5-8js"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市选择" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stf-VI-zcV">
+                            <rect key="frame" x="116" y="5" width="69.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="stf-VI-zcV" firstAttribute="centerY" secondItem="PGg-PI-626" secondAttribute="centerY" id="MkO-Bk-R9s"/>
+                        <constraint firstAttribute="height" constant="30" id="OCR-vC-hy6"/>
+                        <constraint firstAttribute="trailing" secondItem="PGg-PI-626" secondAttribute="trailing" id="YSW-60-UZr"/>
+                        <constraint firstItem="PGg-PI-626" firstAttribute="top" secondItem="POc-Jn-GpQ" secondAttribute="top" id="bPJ-F3-hZJ"/>
+                        <constraint firstAttribute="bottom" secondItem="PGg-PI-626" secondAttribute="bottom" id="gUO-g9-6ou"/>
+                        <constraint firstItem="PGg-PI-626" firstAttribute="leading" secondItem="POc-Jn-GpQ" secondAttribute="leading" id="u8o-tn-ZlW"/>
+                        <constraint firstItem="PGg-PI-626" firstAttribute="centerX" secondItem="POc-Jn-GpQ" secondAttribute="centerX" id="uCg-L3-8lB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="POc-Jn-GpQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Efg-Qv-rQa"/>
+                <constraint firstItem="POc-Jn-GpQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="egO-VR-N22"/>
+                <constraint firstAttribute="trailing" secondItem="POc-Jn-GpQ" secondAttribute="trailing" id="kf4-mh-UzE"/>
+                <constraint firstItem="stf-VI-zcV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yjR-8Z-Zjy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-467" y="48"/>
+        </view>
+    </objects>
+</document>
